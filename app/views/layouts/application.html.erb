@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TestEngine</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">
+   <script src="//code.jquery.com/jquery-1.8.3.js"></script>
+   <script src="//code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+  <%= csrf_meta_tags %>
+</head>
+
+<header>
+ <%= render "layouts/common/header" %>
+</header>
+<body>
+<h1> <%= suggest %> </h1>
+
+
+<li><%= link_to "Please Sign Out" , destroy_user_session_path  , :align=> "center" %></li>
+<%= yield %>
+
+</body>
+</html>
