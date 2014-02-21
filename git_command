@@ -56,7 +56,26 @@ git commit -m "Gemfile devise gem added"           # commit the file localy and 
 
 git push origin BRANCH_1_TO_CREATE                 # push the file to remote
 
-=======================================================================
+=============================== merge  local branch to master ===============================
+
+git branch 
+ 
+        master
+      * BRANCH_1_TO_CREATE
+        BRANCH_2_TO_CREATE
+
+git checkout  master                     #  here checkout the master and merge local branch to master
+
+git merge BRANCH_1_TO_CREATE             # after Your branch is ahead of 'origin/master' in local and  ready to push remote
+
+git push origin master                   # push merge branch to master in remote server , merge done 
+
+git checkout master  
+
+=================================================================
+
+
+
 
 
 
