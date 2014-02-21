@@ -72,7 +72,11 @@ git push origin master                   # push merge branch to master in remote
 
 git checkout master  
 
-=================================================================
+============================  delete local and remote branch 
+
+git branch -d BRANCH_2_TO_CREATE                         # remove local branch 
+
+git push origin --delete  BRANCH_2_TO_CREATE             # remove remote branch 
 
 
 
